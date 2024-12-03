@@ -26,7 +26,7 @@ const NavBar = () => {
         <Link href={"/"}>
           <Logo />
         </Link>
-        <div className="hidden lg:flex gap-16 items-center ">
+        <div className="hidden md:flex gap-12 lg:gap-16 items-center ">
           {navItems.map((item, index) => {
             const isActive = pathname === item.path;
             return (
@@ -47,7 +47,7 @@ const NavBar = () => {
 
         {/* Menu for medium or small screens  */}
         <Sheet>
-          <SheetTrigger className="block lg:hidden">
+          <SheetTrigger className="block md:hidden">
             <Menu />
           </SheetTrigger>
           <SheetContent className="flex flex-col gap-5">
