@@ -10,11 +10,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
+import Search from "@/assets/svgs/search";
 
 const navItems = [
   { title: "Blog", path: "/blog" },
   { title: "About", path: "/about" },
-  { title: "Contact", path: "/contact" },
 ];
 
 const NavBar = () => {
@@ -41,6 +41,7 @@ const NavBar = () => {
               </Link>
             );
           })}
+          <Search />
           <Button>Get Started</Button>
         </div>
 
@@ -68,6 +69,9 @@ const NavBar = () => {
                 </SheetTitle>
               );
             })}
+            <SheetTitle>
+              <Search />
+            </SheetTitle>
             <SheetTitle>
               <Button>Get Started</Button>
             </SheetTitle>
